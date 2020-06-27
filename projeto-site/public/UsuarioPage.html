@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
+    <title>Página Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <script src="funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo"><i><span class="art">ARTES</span> Coisas escondidas</i></h1>
+            <div class="nav_2">
+                    <a href="#" onclick="logoff()" style="color:#ffff">[Sair]</a>
+            </div>
+        </div>
+    </div>
+    <div class="espaco"></div>
+    <div class="espaco"></div>
+    <center>            
+        <div class="aviso" id="aviso_id"><button onclick="fechar()">⨯</button>
+                <h1>Bem-Vindos <b id="b_usuario"></b> à Página do Usuário </h1>
+                Aqui você encontrará tutoriais envolvendo artes, mais sobre como a psicologia está associada e suas
+                naturezas, e obras literarias pouco conhecidas que são ótimas!<br>
+                Clicando em algum dos blocos será direcionado as abas para os tutoriais e mais curiosidades exclusivas.
+                <div class="espaco"></div>
+            </div>
+        <div class="showcase" id="princi" style="display: none">
+            <div class="espaco"></div>
+
+            <div class="textarte">
+                A Psicologia dos filósofos<br>
+                Psicologia não surgiu diretamente como uma ciência. Ela começou como um ramo da filosofia e continuou
+                por cerca de 2000 anos antes de emergir como uma ciência.
+                Psicologia começou como resultado da curiosidade dos cosmólogos para entender sobre as experiências
+                místicas e atividades de pessoas e eventos. Estes incluem as suas experiências na vida, sonhos, vida
+                materialista, os impulsos que têm e peculiaridades no comportamento das pessoas em diferentes
+                situações.<br>
+                O termo psicologia foi encontrado pela primeira vez em livros filosóficos do século 16. Foi formada de
+                duas palavras gregas: ‘psique’ (alma) e “logos” (Doutrina). Por alma, entende-se o princípio subjacente
+                de todos os fenômenos da vida mental e espiritual.
+            </div><br>
+            <a href="artesvisuais-cliente.html"><div class="artetd"> Artes Visuais</div></a>
+            <a href="danca-cliente.html"><div class="artetd">Dança</div> </a>
+            <a href="escultura-cliente.html"><div class="artetd">Escultura</div> </a>
+            <a href="literatura-cliente.html"><div class="artetd">Literatura</div> </a>
+            <a href="musica-cliente.html"><div class="artetd">Música</div> </a>     
+
+            <div class="espaco"></div>
+            <a href="https://www.scielo.br/scielo.php?script=sci_arttext&pid=S0103-166X2018000400375"></a>
+        </div>
+        <br>
+    </center>
+
+
+</body>
+
+</html>
+<script>
+function fechar(){
+    princi.style.display="inline-block";
+    aviso_id.style.display="none";
+
+}
+</script>

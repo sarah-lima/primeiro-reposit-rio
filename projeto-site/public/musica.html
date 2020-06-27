@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Música</title>
+    <link rel="stylesheet" href="css/musica.css">
+    <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div onmouseover="mudaNomeNav()" id="barra_nav" class="navbar">
+            <div class="menu">
+                <h1>☰</h1>
+            </div>
+        </div>
+        <div onmouseout="some()" id="navegação" class="nav">
+            <i class="logo_nav"><span class="f_nav">ARTES</span>Coisas escondidas</i>
+            <div class="espaco_2"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a><button onclick="sublink()">Curiosidades▿</button></a>
+                    <ul class="sublinks" id="sub">
+                        <li><a href="artesvisuais.html">Artes Visuais</a></li>
+                        <li><a href="danca.html">Dança</a></li>
+                        <li><a href="escultura.html">Escultura</a></li>
+                        <li><a href="literatura.html">Literatura</a></li>
+                        <li><a href="#">Música</a></li>
+                    </ul>
+                </li>
+                <li><a href="informações.html">Informações</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1 class="titulo"><i><span class="art">ARTES</span> Coisas escondidas</i></h1>
+        </div>
+    </div>
+    </div>
+    <div class="espaco"></div>
+    <center>
+        <div class="showcase">
+            <div class="textarte"><br>
+                MÚSICA<br>
+
+                <div id="principal">
+                    Podemos dizer que a “Música” é a arte de combinar os sons e o silêncio. Se pararmos para perceber os
+                    sons que estão a nossa volta, concluiremos que a música é parte integrante da nossa vida, ela é
+                    nossa criação quando cantamos, batucamos ou ligamos um rádio ou TV.
+                    A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos,
+                    desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte
+                    integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde
+                    as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o
+                    dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada
+                    diretamente pela organização sociocultural e econômica local, contando ainda com as características
+                    climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música
+                    possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou
+                    nação. A música é uma linguagem local e global.
+                    <br>
+                    Na pré-história o ser humano já produzia uma forma de música que lhe era essencial, pois sua
+                    produção cultural constituída de utensílios para serem utilizados no dia-a-dia, não lhe bastava, era
+                    na arte que o ser humano encontrava campo fértil para projetar seus desejos, medos, e outras
+                    sensações que fugiam a razão. Diferentes fontes arqueológicas, em pinturas, gravuras e esculturas,
+                    apresentam imagens de músicos, instrumentos e dançarinos em ação, no entanto não é conhecida a forma
+                    como esses instrumentos musicais eram produzidos.
+                    <br>
+                    Das grandes civilizações do mundo antigo, foram encontrados vestígios da existência de instrumentos
+                    musicais em diferentes formas de documentos. Os sumérios, que tiveram o auge de sua cultura na bacia
+                    mesopotâmia a milhares de anos antes de Cristo, utilizavam em sua liturgia, hinos e cantos
+                    salmodiados, influenciando as culturas babilônica, caldéia, e judaica, que mais tarde se instalaram
+                    naquela região.<br>
+                    A teoria musical só começou a ser elaborada no século V a.C., na Antiguidade Clássica. São poucas as
+                    peças musicais que ainda existem deste período, e a maioria são gregas. Na Grécia a representação
+                    musical era feita com letras do alfabeto, formando “tetracordes” (quatro sons) com essas letras.
+                    Foram os filósofos gregos que criaram a teoria mais elaborada para a linguagem musical na
+                    Antiguidade. Pitágoras acreditava que a música e a matemática formavam a chave para os segredos do
+                    mundo, que o universo cantava, justificando a importância da música na dança, na tragédia e nos
+                    cultos gregos.
+                    <br>
+                    <div onclick="mostrarBlues()" class="cardtextarte" id="cardblues">BLUES</div>
+                    <div onclick="mostrarClassico()" class="cardtextarte" id="cardclassica">CLÁSSICA</div>
+                    <div onclick="mostrarJazz()" class="cardtextarte" id="cardjazz">JAZZ</div>
+                    <div onclick="mostrarSertanejo()" class="cardtextarte" id="cardsertanejo">SERTANEJO</div>
+                    <div onclick="mostrarRock()" class="cardtextarte" id="cardrock">ROCK</div>
+                    <div onclick="mostrarFunk()" class="cardtextarte" id="cardfunk">FUNK</div>
+                    <div onclick="mostrarEletronica()" class="cardtextarte" id="cardeletronica">ELETRÔNICA</div>
+                    <div onclick="mostrarSamba()" class="cardtextarte" id="cardsamba">SAMBA</div>
+                    <div onclick="mostrarPagode()" class="cardtextarte" id="cardpagode">PAGODE</div>
+                    <div onclick="mostrarPop()" class="cardtextarte" id="cardpop">POP</div>
+                    <div onclick="mostrarReggae()" class="cardtextarte" id="cardreggae">REGGAE</div>
+                    <div onclick="mostrarMpb()" class="cardtextarte" id="cardmpb">MPB</div>
+                    <div onclick="mostrarRap()" class="cardtextarte" id="cardrap">RAP</div>
+                    <div onclick="mostrarForro()" class="cardtextarte" id="cardforro">FORRÓ</div>
+                    <div onclick="mostrarCountry()" class="cardtextarte" id="cardcountry">COUNTRY</div>
+                </div>
+                <div class="blues" id="textBlues" style="display: none">
+                    <i>Blues</i><br>
+                    A música esteve na história de várias formas e estilos, em cada momento em que um ritmo diferente
+                    surgiu
+                    se passava um marco na História, o Blues surgiu quando os escravos das fazendas de algodão que
+                    acompanhavam as margens do rio Mississipi no sul dos Estados Unidos, por volta de 1870, criavam e
+                    cantavam melodias lentas e chorosas, que além de marcar o ritmo, mostrava a expressão e o contorno
+                    de um
+                    povo desprezado, discriminado e sofrido.No seu desenvolvimento, porém, sofreu influências não só
+                    africanas, mas também das mais tradicionais baladas européias e marchas militares. Como estilo
+                    musical,
+                    o Blues evoluiu a partir do século passado. Surgiram pequenas variações estilísticas, algumas
+                    determinadas apenas por diferenças geográficas.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bb1SrngIufQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textClassico" style="display: none">
+                    <i>Clássico</i><br>
+                    A música clássica foi desenvolvida na Europa ao longo de séculos. A maioria da música clássica mais
+                    antiga era utilizada em cerimônias religiosas. Com o tempo, a música não religiosa, também chamada
+                    de música profana, foi se tornando mais popular. A música clássica era tocada para divertir os reis
+                    e nobres da corte.<br>
+                    Entre o fim do século XVI e a metade do século XVIII, a música clássica
+                    cresceu e evoluiu rapidamente. As orquestras surgiram nessa época. Os músicos também criaram novas
+                    formas de música clássica, como a ópera. Os especialistas em música chamam a época entre 1750 e 1820
+                    de era clássica. Nesse período, os músicos desenvolveram uma série de formas musicais. Uma delas foi
+                    a sinfonia, que é uma composição musical longa para orquestra. Outra foi a música para quarteto de
+                    cordas, uma composição musical para ser tocada por dois violinos, uma viola e um violoncelo.<br>
+                    Uma outra concepção restringe-se ao que se chama de música clássica, definindo-a como uma estrutura
+                    esteticamente distinta, harmônica, objetiva e rigorosa, ausente de informalidades, emoções
+                    excessivas e procedentes da alma humana, típicas das músicas nascidas durante o
+                    <a href="/literatura.html">Romantismo</a>. Mas aí
+                    reside um problema difícil de equacionar, o de que músicos como Beethoven e Schubert apresentam
+                    características românticas em suas composições, e seria inviável excluí-los do quadro das músicas
+                    clássicas só por esta razão.<br>
+                    A música clássica é um gênero musical erudito que surgiu no Ocidente. Entre suas características
+                    estão a presença de orquestras com instrumentos como o violino e o piano e espetáculos solenes. Há
+                    quem ache o gênero difícil de entender, enquanto outros consideram que é relaxante, emociona, acalma
+                    ou até mesmo ajuda nos estudos. Seus principais compositores foram Mozart, Beethoven e Bach. Na
+                    música clássica brasileira, alguns dos nome mais conhecidos são Carlos Gomes e Heitor
+                    Villa-Lobos.<br>
+                    A música erudita, ou clássica, é diferente da música popular e da música folclórica. Ela é mais
+                    elaborada e costuma ser escrita em partituras. Partituras são folhas de papel pautadas em que se
+                    escrevem as notas musicais; ao lê-las, os músicos sabem qual composição devem tocar. Os músicos
+                    clássicos geralmente se atêm à partitura e não costumam improvisar.
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mGQLXRTl3Z0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textJazz" style="display: none">
+                    <i>Jazz</i><br>
+                    O surgimento do jazz tem como matriz principal a cultura africana. As pessoas que foram capturadas
+                    na África e levadas ao solo norte-americano para serem escravizadas tinham na música e no canto uma
+                    espécie de "refúgio" no qual podiam expressar-se.
+                    Assim, durante o trabalho nas plantações de arroz, algodão, açúcar e tabaco, os trabalhadores
+                    entoavam canções coletivas.
+                    Depois da abolição da escravidão no país em 1863, os negros aproximam-se dos instrumentos ocidentais
+                    e ocorre uma mescla de culturas, melodias e ritmos.
+                    Posteriormente, em torno de 1890, já com o crescimento das cidades, essa efervescência sonora ganha
+                    corpo em Nova Orleans, Louisiana, mais precisamente no bairro de Storyville, em bares chamados de
+                    Honky Tonks.<br>
+                    Jazz é uma manifestação artístico-musical originária de comunidades de Nova Orleães, nos Estados
+                    Unidos. Tal manifestação teria surgido por volta do final do século XIX na região de Nova
+                    Orleães, tendo origem na cultura popular e na criatividade das comunidades negras que ali viviam, um
+                    de seus espaços de desenvolvimento mais importantes.<br>
+                    O jazz se desenvolveu com a mistura de várias tradições religiosas, em particular a afro-americana.
+                    Esta nova forma de se fazer música incorporava blue notes, chamada e resposta, forma sincopada,
+                    polirritmia, improvisação e notas com swing do ragtime. Os instrumentos musicais básicos para o Jazz
+                    são aqueles usados em bandas marciais e bandas de dança: metais, palhetas e baterias. No entanto, o
+                    jazz, em suas várias formas, aceita praticamente todo tipo de instrumento.<br>
+                    O jazz foi criado pelos negros no início do século, no delta do Mississippi e em New Orleans. A
+                    música de jazz tem três características principais:
+                    <ul>
+                        <li>O swing, balanço</li>
+                        <li>O improviso, ou individuação, como solos improvisados que se seguem ao tema.</li>
+                        <li>A comunicação, ou função de ritual, herdada das reuniões de igreja, onde a participação da
+                            plateia é fundamental.</li>
+                    </ul>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RPfFhfSuUZ4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textSertanejo" style="display: none">
+                    <i>Sertanejo</i><br>
+                    Música sertaneja é um gênero musical do Brasil produzido a partir da década de 1910 por compositores
+                    urbanos, rurais e outros chamada genericamente de modas e emboladas cujo som da viola é
+                    predominante. O sertanejo é atualmente o mais popular estilo musical no Brasil, superando
+                    inclusive o samba, na maioria dos estados do país. O gênero musical sertanejo mais famoso é o
+                    sertanejo caipira, ou música caipira, esse gênero musical historicamente teve início com o
+                    Bandeirismo, um movimento de desbravamento no interior do Brasil pelos bandeirantes paulistas, no
+                    século XVI. Inicialmente tal estilo de música foi propagado por uma série de duplas, com a
+                    utilização de violas e dueto vocal. Esta tradição segue até dias atuais, tendo a dupla geralmente
+                    caracterizada por cantores com voz tenor (mais aguda), nasal e uso acentuado de um falsete típico.
+                    Enquanto o estilo vocal manteve-se relativamente estável ao longo das décadas, o ritmo, a
+                    instrumentação e o contorno melódico incorporaram aos poucos elementos de gêneros disseminados pela
+                    indústria cultural.<br> Tais modificações dentro do gênero musical têm provocado muitas confusões e
+                    discussões no país a cerca do que seria música caipira/sertaneja. Críticos literários, críticos
+                    musicais, jornalistas, produtores de discos, cantores de duplas sertanejas, compositores e
+                    admiradores debatem sobre as quais seriam as formas artísticas de expressão do gênero, que levam em
+                    conta as mudanças ocorridas ao longo de sua história. Muitos estudiosos seguem a tendência
+                    tradicional de integrar as músicas caipira e sertaneja como subgêneros dentro um só conjunto
+                    musical, estabelecendo fases e divisões: de 1929 até 1944, como "música caipira" (ou "música
+                    sertaneja raiz"); do pós-guerra até a década de 1960, como uma fase de transição da velha música
+                    caipira rumo à constituição do atual gênero sertanejo; e do final dos anos sessenta até a
+                    atualidade, como música "sertaneja romântica". Outros no meio acadêmico, no entanto, consideram
+                    "música caipira" e "música sertaneja" gêneros completamente independentes, baseado na ideia de que a
+                    primeira seria a música rural autêntica e/ou do homem rural autêntico, enquanto a segunda seria
+                    aquela feita, como "produto de consumo", nos grandes centros urbanos brasileiros por não-caipiras.
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LmRrLl8aLfE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div id="textRock" style="display: none">
+                    Rock é um termo abrangente que define um gênero musical de música popular que se
+                    desenvolveu durante e após a década de 1950. Suas raízes se encontram no rock and roll e no
+                    rockabilly que emergiram e se definiram nos Estados Unidos no final dos anos quarenta e início dos
+                    cinquenta e que, por sua vez, evoluíram do blues, da música country e do rhythm and blues. Outras
+                    influências musicais sobre o rock ainda incluem o folk, o jazz e a música clássica. Todas estas
+                    influências foram combinadas em uma estrutura musical simples baseada no blues que era "rápida,
+                    dançável e pegajosa".<br>
+                    No final da década de 1960 e início dos anos setenta, o rock desenvolveu diferentes subgêneros.
+                    Quando foi misturado com a folk music ou com o blues ou com o jazz, nasceram o folk rock, o
+                    blues-rock e o jazz-rock, respectivamente. Na década de 1970, o rock incorporou influências de
+                    gêneros como a soul music, o funk e de diversos ritmos de países latino-americanos. Ainda naquela
+                    década, o rock gerou uma série de outros subgêneros, tais como o soft rock, o glam rock, o heavy
+                    metal, o hard rock, o rock progressivo e o punk rock. Já nos anos oitenta, os subgêneros que
+                    surgiram foram a new wave, o punk hardcore e rock alternativo. E, na década de 1990, os subgêneros
+                    criados foram o grunge, o britpop, o indie rock e o nu metal.
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8SbUC-UaAxE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textFunk" style="display: none">
+                    <i>ESTADOS UNIDOS</i><br>
+                    O funk é um gênero musical que se originou em comunidades afro-americanas em meados da década de
+                    1960, quando músicos afro-americanos criaram uma nova forma de música rítmica e dançante através da
+                    mistura de soul, jazz e rhythm and blues. O funk tira a ênfase da melodia e da harmonia e traz um
+                    groove rítmico forte de baixo elétrico e bateria no fundo. Como grande parte da música de inspiração
+                    africana, o funk normalmente consiste em um groove complexo com instrumentos rítmicos tocando
+                    grooves interligados. Funk usa os mesmos acordes estendidos ricamente coloridos encontrados no
+                    bebop, um subgênero do jazz.<br>
+                    O funk pode ser melhor reconhecido por seu ritmo de batidas repetitivas sincopado, pelos vocais de
+                    alguns de seus cantores e grupos (como Cameo, ou The Bar-Kays). E ainda pela forte e rítmica seção
+                    de metais, pela percussão marcante e ritmo dançante. Nos anos 1970, o funk foi influência para
+                    músicos de jazz (como exemplos, as músicas de Miles Davis, Herbie Hancock, George Duke, Eddie
+                    Harris, entre outros).<br>
+                    O funk cria um groove intenso através do uso de riffs poderosos e linhas de baixo. Como as gravações
+                    da Motown, as canções de linhas de baixo do funk eram usadas como o tema central das canções.
+                    Tocando o baixo mediante a técnica do slap, tocados com o polegar e outros notas altas tocadas com
+                    os outros dedos, permitindo assim que o baixista tenha um papel rítmico semelhante ao da bateria, o
+                    que se tornou um elemento central do funk. Alguns dos solistas mais conhecidos e qualificados no
+                    funk tinha uma influencia significativo do jazz. O trombonista Fred Wesley e o saxofonista Maceo
+                    Parker estão entre os músicos mais notáveis do funk, tendo ambos tocado com músicos como James
+                    Brown, George Clinton e Prince. Algumas das bandas de funk mais distintivas das décadas de 1960 e
+                    1970 são Kool & The Gang, The Meters, Tower of Power, Earth, Wind & Fire, The Blackbyrds, The Ohio
+                    Players, The Brothers Johnson e Charles Wright & the Watts 103rd Street Rhythm Band.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pspmBbbOHh8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe><br>
+                    <i>BRASIL</i><br>
+                    O funk carioca, ou simplesmente funk, é um estilo musical oriundo das favelas do estado do Rio de
+                    Janeiro, no Brasil. Apesar do nome, é diferente do funk originário dos Estados Unidos. Isso ocorreu
+                    pois, a partir dos anos 1970, começaram a ser realizados bailes da pesada, black, soul, shaft ou
+                    funk no Rio de Janeiro. Com o tempo, os DJs foram buscando outros ritmos de música negra, mas o nome
+                    original permaneceu. O funk carioca tem uma influência direta do miami bass e do freestyle. O termo
+                    "baile funk" é usado para se referir a festas em que se toca o funk carioca. Apesar do nome, o funk
+                    carioca surgiu e é tocado em todo o estado do Rio de Janeiro e não somente na cidade do Rio de
+                    Janeiro, como o gentílico "carioca" leva a crer.<br>
+
+                    O funk carioca, basicamente ligado ao público jovem, tornou-se um dos maiores fenômenos de massa do
+                    Brasil. Na década de 1980, o antropólogo Hermano Vianna foi o primeiro cientista social a abordá-lo
+                    como objeto de estudo, em sua dissertação de mestrado que daria origem ao livro O Mundo Funk Carioca
+                    (1988).Durante muitos anos, cultivou-se uma grande rivalidade entre os estados de São Paulo e Rio de
+                    Janeiro no que tange aos estilos musicais predominantes em cada região. O Rio de Janeiro, por
+                    exemplo, criou o ritmo funk carioca, que possui em sua essência temas como a vida nas favelas e a
+                    exaltação da mulher - esta última, através do funk melody, e ao "proibidão", que canta sobre
+                    criminalidade e possui conteúdos de apelo sexual; no entanto, tal estilo não era aceito em São
+                    Paulo, pois era julgado pela maioria como alienante - apesar de uma crítica social se encontrar
+                    presente. Em contrapartida, os paulistas apresentavam um discurso contundente espelhado nos rappers
+                    norte-americanos da chamada velha escola do hip hop, preocupando-se em expor os problemas do governo
+                    em batidas pesadas e agressivas, as quais não foram bem-recebidas no estado vizinho por serem vistas
+                    como "chatas e antidiversão". Esta divisão explica a existência de poucos cantores de funk em São
+                    Paulo, bem como poucos rappers no Rio de Janeiro. Com o funk ostentação, essa divisão entre os
+                    estados acabou ficando bem menor, visto que ambos encontraram um "meio-termo" em seus ideais.
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W6f8jlqRXB4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textEletronica" style="display:none">
+                    A música eletrônica é toda música que é criada ou modificada através do uso de equipamentos e
+                    instrumentos eletrônicos. Por sua história passar de uma vertente da música erudita (fruto do
+                    trabalho de compositores visionários) a um elemento da música popular, primeiramente bastante
+                    relacionado ao rock e posteriormente discernindo-se como um gênero musical próprio (principalmente
+                    relacionado com a música popular nos sub-estilos considerados dançantes tais como o techno, acid,
+                    house, trance e drum 'n' bass, desenvolvidos a partir do auge da música disco no final da década de
+                    1970). Atualmente existem várias ramificações do estilo, tanto eruditas como populares.
+                    Originalmente relutada por ter sua tecnologia evoluída muito mais rapidamente que sua estética, só
+                    passou a ter princípios e tradição após a Segunda Guerra Mundial, com o trabalho de franceses na
+                    música concreta e de alemães na Elektronische Musik.<br>
+                    Obs.: É importante salientar que, por definição, música eletrônica é toda música criada através do
+                    uso de equipamentos e instrumentos eletrônicos. Entretanto, a partir da grande popularização da
+                    música eletrônica dançante a partir da década de 1980, esta passou a ser conhecida pelo público
+                    geral pela denominação simples de música eletrônica, o que prevalece até hoje.
+                    A música eletrônica possui uma estrutura em comum, independente do estilo a estrutura é a mesma,
+                    porém, pode variar de acordo com seus produtores. A estrutura da música eletrônica é dividida em:
+                    <ul>
+                        <li>Intro (introdução): A introdução é como seu nome já diz, o começo da música, a cada compasso
+                            que vira ela vai ganhando elementos que incorporam a música. Sua duração é de 15 segundos
+                            até 1 minuto.
+                        </li>
+                        <li>Break: Ponto calmo, de desenvolvimento da track, onde a escolha dos elementos da track
+                            (melodia, vocal, enfim) é da escolha do autor.
+                        </li>
+                        <li>Build up: O ponto de tensão, de clímax antes do Drop;</li>
+                        <li>Drop: O ponto mais agressivo da música, onde a maioria dos elementos se concentram para
+                            preencher o drop.</li>
+                    </ul>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MTbX4KC0AaU" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textSamba" style="display: none">
+                    O samba é considerado por muitos críticos de música popular, artistas, historiadores e cientistas
+                    sociais como o mais original dos gêneros musicais brasileiros ou o gênero musical tipicamente
+                    brasileiro. A despeito da centralidade ou não do samba como gênero musical nacional, sua origem (ou
+                    a história de sua origem) nos traz o registro de uma imensa mistura de ritmos e tradições que
+                    atravessam a história do país.<br>
+                    O samba originou-se dos antigos batuques trazidos pelos africanos que vieram como escravos para o
+                    Brasil. Esses batuques estavam geralmente associados a elementos religiosos que instituíam entre os
+                    negros uma espécie de comunicação ritual através da música e da dança, da percussão e dos movimentos
+                    do corpo. Os ritmos do batuque aos poucos foram incorporando elementos de outros tipos de música,
+                    sobretudo no cenário do Rio de Janeiro do século XIX.<br>
+                    A partir do século XIX, a cidade do Rio de Janeiro, que se tornara a capital do Império, também
+                    passou a comportar uma leva de negros vindos de outras regiões do país, sobretudo da Bahia. Foi
+                    nesse contexto que nasceram os aglomerados em torno das religiões iorubás na região central da
+                    cidade, principalmente na região da Praça Onze, onde atuavam mães e pais de santo. Foi nessa
+                    ambiência que as primeiras rodas de samba apareceram, misturando-se os elementos do batuque africano
+                    com a polca e o maxixe.<br>
+                    A partir dos anos 1930, o samba ganhou grande espaço na indústria fonográfica e também foi usado
+                    pela política ditatorial de Getúlio Vargas na época do Estado Novo. Um dos grandes estudiosos das
+                    raízes do samba também era sambista e figurou entre os nomes que se alastraram no Rio de Janeiro nos
+                    anos 1930. Seu apelido era “Almirante”, seu nome era Henrique Foreis Domingues (1908 - 1980), que
+                    depois se tornou radialista. Almirante integrou o grupo “Bando dos Tangarás” junto a Noel Rosa na
+                    Vila Isabel. Sua obra No tempo de Noel Rosa busca por elementos folclóricos do samba urbano
+                    desenvolvido no Rio e relaciona esse gênero com as várias influências de outros ritmos musicais de
+                    várias partes do Brasil. Nomes como Wilson Batista, Noel Rosa, Cartola e Nelson Cavaquinho também se
+                    tornaram referência desse período.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_TnLPDG8ZMA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textPagode" style="display: none">
+                    Pagode é um gênero musical brasileiro originado no Rio de Janeiro a partir da cena musical do
+                    samba.<br>
+                    O pagode designa festas, reuniões para se compartilhar amizades, música, comida e bebida. Surge como
+                    celebração do samba em meados do século XIX e se consolida no século XX no Rio de Janeiro. Mesmo
+                    antes já eram celebradas estas festas em senzalas de escravos negros e quilombos. Com a abolição da
+                    escravatura e fixação dos negros libertos no Rio de Janeiro - muitos deles negros bahianos, e que
+                    têm uma relação intrinseca com o sincretismo de religiões de origem africana, como o candomblé, a
+                    macumba - o pagode se consolida com a necessidade de compartilhar e construir identidade de um povo
+                    recém liberto, e que precisa dar outra função ao corpo que até então é somente instrumento de
+                    trabalho. Por isso a relação estreita entre música e dança na cultura de origem africana, além do
+                    fato de ter a síncopa como principal caracteristica da construção técnica-musical, derivada da
+                    percussão marcadora do ritmo.<br>
+                    Antigamente, pagode era considerado como festa de escravos nas senzalas. No final da década de 1970,
+                    no Rio de Janeiro o termo passou a ser associado a festas em casas e quadras dos subúrbios cariocas,
+                    nos calçadões de bares do Centro do Rio e da periferia, regadas a bebida e com muito samba. A
+                    palavra pagode no sentido corrente surgiu de festas em favelas e nos fundos de quintais cariocas que
+                    falavam sobre sentimentos (alegrias e tristezas) das pessoas que lá moravam.<br>
+                    O pagode apresenta diferenciações nítidas do samba. Tem andamento mais ligeiro, agressivo, além de
+                    introduzir o repique de mão criado pelo músico Ubirany, do grupo Fundo de Quintal, o tantã (criado
+                    pelo músico e compositor Sereno, do grupo Fundo de Quintal) e o banjo com braço de cavaquinho
+                    (criado por Almir Guineto). É um ritmo de mais festeiro do que o samba tradicional.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S_SXl-ETXRI" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textPop" style="display:none">
+                    Pop surgiu nos Estados Unidos na década de 50. O estilo musical é marcado pela conservação da
+                    estrutura formal da música: “verso – estribilho – verso”, executada de modo sensível e melódico,
+                    normalmente assimilado por um grande público. Ainda são características dos cantores Pop o hábito de
+                    fazer cenários de shows extravagantes, muita dança e inúmeros outros artíficios.<br>
+                    <b>Anos 50</b><br>
+                    A história do Pop se inicia um pouco antes, na década de 30, pois foi nesse período que surgiram
+                    estilos que influenciariam mais tarde o desenvolvimento do gênero, como o Blues e o Country. De
+                    fato, os cantores mais famosos da década de 50 foram Bing Crosby, Frank Sinatra, Dean Martin e
+                    indiretamente, Elvis Presley.<br>
+                    <b>Anos 60</b> <br>
+                    Com a evolução do estilo musical, cantores como Bob Dylan, Carole King, Neil Diamond, ídolos dos
+                    adolescentes da época, surgiram nesse período. Além disso, algumas músicas do The Beatles também
+                    tiveram sua faceta Pop.<br>
+                    <b>Anos 70</b><br>
+                    No cenário da música dos anos 70 surgiram os estilismos country dos Eagles, o rock-influenced pop de
+                    Rod Stewart, Steely Dan, Fleetwood Mac. e ABBA, além dos novos sons vindos da Disco e dos Bee Gees,
+                    e o piano-based Pop de Billy Joel e Elton John.<br>
+                    <b>Anos 80</b><br>
+                    O Pop dos anos 80 pode ser resumido em dois fenômenos: Michael Jackson, já que seu álbum Thriller se
+                    tornou o mais vendido de todos os tempos (104,5 milhões de cópias até 2006); e Madonna com seu Dance
+                    Pop. Michael e Madonna fizeram tanto sucesso que são considerados “rei” e “rainha” do Pop,
+                    respectivamente.<br>
+                    <b>Anos 90</b><br>
+                    Os anos 90 foram marcados pelas boy bands e girl groups (grupos de 5 a 6 garotos ou garotas
+                    vocalistas dançantes que se revezavam no solo vocal). Alguns exemplos de bandas assim que estouraram
+                    na época são Spices Girls e Backstreet Boys. Ainda nesse período, podemos citar o surgimento das pop
+                    princesses, como Mandy Moore, Britney Spears, Beyoncé, Jessica Simpson e Christina Aguilera, e os
+                    fenômenos do Pop latino Ricky Martin, Jennifer Lopez, Shakira e Enrique Iglesias.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zi_XLOBDo_Y" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textReggae" style="display: none">
+                    O reggae surgiu na Jamaica, na década de 60, tendo Bob Marley, cantor e compositor, seu principal
+                    ícone. O nome “reggae” foi empregado devido ao som que se faz na guitarra. O "re" seria o movimento
+                    pra baixo, e o "gae", o movimento pra cima. O reggae se caracteriza por cortes rítmicos regulares
+                    sobre a música e pela bateria, que é tocada no terceiro tempo de cada compasso, em outras palavras,
+                    se trata de um ritmo lento e dançante.<br>
+                    Esse estilo musical surgiu baseado no movimento Rastafari. O Rastafari é um movimento religioso
+                    jamaicano que dá a Haile Selassie I, imperador da Etiópia, características messiânicas. Toda essa
+                    crença, aliada ao uso da maconha e às aspirações políticas e afrocentristas, ganhou adeptos no mundo
+                    inteiro devido ao interesse no ritmo do reagge gerado por Bob Marley.<br>
+                    A característica principal da temática do reggae é a crítica social, envolvendo questões sobre
+                    desigualdade, preconceito, fome e outros problemas sociais. Além disso, existe a valorização das
+                    ervas entorpecentes, pois segundo a visão Rastafari, elas poderiam trazer muitos benefícios à
+                    sociedade. Porém, atualmente existem muitas outras visões do reggae que não se restringem à cultura
+                    Rastafari, envolvendo outros temas como o amor, sexo, etc.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CHekNnySAfM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textMpb" style="display: none">
+                    A expressão “música popular” é usada por aqui há séculos, mas sem se referir a nenhum movimento ou
+                    grupo artístico específico. A história da MPB só começa de verdade na segunda metade da década de
+                    60. <br>
+                    O contexto era o seguinte: a bossa nova, com influências do samba e do jazz americano, fazia sucesso
+                    com sua proposta de criar músicas mais sofisticadas, falando do cotidiano e das belezas do Brasil.
+                    Grandes nomes como Tom Jobim, Vinicius de Moraes e Nara Leão já faziam sucesso com esse movimento.
+                    <br>
+                    Ao mesmo tempo, havia um outro grupo que queria resgatar as origens da música brasileira, buscando
+                    inspiração no folclore e nos ritmos tradicionais vindos de diferentes regiões do país. <br>
+                    Logo depois do começo da ditadura, em 1964, os dois movimentos se uniram como uma frente cultural
+                    contra o regime e adotaram a sigla MPM (Música Popular Moderna). A mudança de MPM para MPB teria
+                    sido, entre outras coisas, por influência do grupo MPB4, que surgiu mais ou menos na mesma
+                    época.<br>
+                    Por ter surgido como bandeira de luta, a Música Popular Brasileira nasceu com letras críticas, as
+                    chamadas canções de protesto — músicas que tentam chamar a atenção dos ouvintes para problemas
+                    políticos e sociais. <br>
+                    Nesse mesmo contexto, estava acontecendo outro fenômeno que mudou a história do Brasil: a
+                    popularização da televisão. A música, que até então só era ouvida no rádio, ganhou espaço nas
+                    telinhas e surgiram os famosos festivais musicais, responsáveis por consagrar de vez a MPB.<br>
+                    Apesar da censura do regime, muitos artistas conseguiram se apresentar nos festivais cantando
+                    músicas que eram verdadeiras canções de protesto contra a ditadura. Alguns, infelizmente, não
+                    conseguiram fugir da censura, como Chico Buarque e Gilberto Gil, que tiveram o áudio cortado ao
+                    apresentarem a música Cálice, no festival Phono 73.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7u_ra7OWntg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textRap" style="display: none">
+                    Rap, na música, é extremamente fidedigna à improvisação poética sobre uma batida no tempo rápido e
+                    freqüentemente só é acompanhada pelo som do baixo, ou sem acompanhamento. Rap é um estilo musical
+                    raro em que o texto é mais importante que a linha melódica ou a parte harmônica; sendo um dos dois
+                    únicos estilos musicais da história da música ocidental em que o texto é mais importante que a
+                    música---o outro sendo o canto gregoriano, em que a música era uma monodia, homofônica, marcada pelo
+                    ritmo, e a melodia religiosamente não podia nunca sobressair o texto litúrgico. O rap não usa
+                    melodias e motivos decorativos e harmônicos com arranjos elaborados dos instrumentos, mas vale-se
+                    somente em quão rápido o cantor narra a sua "fala" com muito pouca musicalidade adicionada a sua
+                    poesia. A música rap também tem uma similaridade distinta com a música celta em que forma-se uma
+                    brincadeira na qual os cantores tentam duelar suas frases com rimas, rapidamente improvisadas e
+                    humorísticas; alternadamente, um desafiando o outro nas rápidas frases inteligentes; quem
+                    ganha---deixando o outro esgotado sem ideias---não paga pelas bebidas. Esta influência indireta e
+                    não intencional veio da música de raiz, de folclore, importada pelos imigrantes escoceses e
+                    irlandeses que migraram para o sul dos EUA, das fazendas de plantação, como a música afro-americana,
+                    que pelo povo do sul, com a música de improvisação, no Jazz de raiz, surge nos duelos de banjo
+                    (country) depois, e desses "duelos" aparece também, bem mais tarde, o rap.<br>
+                    Rap é um discurso rítmico com rimas e poesias, que surgiu no final do século XX entre as comunidades
+                    Afro-descendentes nos Estados Unidos. É um dos cinco pilares fundamentais da cultura hip hop, de
+                    modo que se chame metonimicamente (e de forma imprecisa) hip hop.
+                    Pode ser interpretado a capella bem como com um som musical de fundo, chamado beatbox. Os cantores
+                    de rap são conhecidos como rappers ou MCs, abreviatura para mestre de cerimônias.<br>
+                    O rap, comercializado nos EUA, desenvolveu-se tanto por dentro como por fora da cultura hip hop, e
+                    começou com as festas nas ruas, nos anos 1970 por jamaicanos e outros. Eles introduziam as grandes
+                    festas populares em grandes galpões, com a prática de ter um MC, que subia no palco junto ao DJ e
+                    animava a multidão, gritando e encorajando com as palavras rimadas, até que foi se formando o rap. A
+                    origem do Rap veio da Jamaica, mais ou menos na década de 1960 quando surgiram os sistemas de som,
+                    que eram colocados nas ruas dos guetos jamaicanos para animar bailes. Esses bailes serviam de fundo
+                    para o discurso dos "toasters", autênticos mestres de cerimônia que comentavam, nas suas
+                    intervenções, assuntos como a violência das favelas de Kingston e a situação política da Ilha, sem
+                    deixar de falar, é claro, de temas mais polêmicos, como sexo e drogas. No início da década de 1970
+                    muitos jovens jamaicanos foram obrigados a emigrar para os Estados Unidos, devido a uma crise
+                    econômica e social que se abateu sobre a ilha. E um em especial, o DJ jamaicano Kool Herc,
+                    introduziu em Nova Iorque a tradição dos sistemas de som e do canto falado e foi se espalhando e
+                    popularizando entre as classes mais pobres ate chegar a atingir a alta sociedade.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VYOjWnS4cMY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textForro" style="display: none">
+                    O forró é uma expressão artística genuinamente nordestina. Por ser uma forma de manifestação
+                    cultural ampla, o termo forró tem diversos significados e pode servir tanto para designar o ritmo
+                    musical, o estilo de dança e mesmo a festividade em que acontece.<br>
+                    Sua origem tem relação com bailes populares que eram realizados no final do século XIX e eram
+                    chamados de "forrobodó", "forrobodança" ou "forrobodão".
+                    Naquele tempo era preciso molhar o piso do local onde essas festas aconteciam, pois eles eram feitos
+                    de "chão batido", ou seja, não havia revestimento, somente terra.
+                    As pessoas costumavam dançar arrastando os pés a fim de evitar que a poeira levantasse, daí o termo
+                    rastapé ou arrasta-pé.<br>
+                    O Forró é uma festa originária da Região Nordeste do Brasil, bastante popular e comum, especialmente
+                    nas festas juninas. O nome da festa forró é usado para nomear distintos gêneros musicais como o
+                    xote, baião, arrasta-pé e o xaxado, por isso quem não conhece suas histórias, as confundem com um
+                    gênero único. As músicas são executadas tradicionalmente por trios instrumentais com acordeão
+                    ("sanfona"), zabumba e triângulo.<br>
+                    Forró também é um dos gêneros musicais da festa forró, o qual foi criado por Luiz Gonzaga em 1958. A
+                    dança do xote (dois pra lá e dois pra cá) passou a acompanhar as músicas desse novo gênero e a ser
+                    chamada de dança do forró.<br>
+                    Os gêneros musicais executados nos forrós, desde a década de 90 também são chamados agrupadamente de
+                    forró pé-de-serra.<br>
+                    Conhecido e praticado em todo o Brasil, o forró é especialmente popular nas cidades brasileiras de
+                    Caruaru e Campina Grande, que sediam as maiores festas juninas do país. Já nas capitais Aracaju,
+                    Fortaleza, João Pessoa, Natal, Maceió, Recife, Teresina e Salvador, são tradicionais as festas e
+                    apresentações de bandas de forró em eventos privados que atraem especialmente os jovens.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YI6Fy-fb9Ms" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textCountry" style="display: none">
+                    A country music, estilo tipicamente americano, nasceu da influência de escravos com suas canções de
+                    guerra, do profundo senso religioso do Sul dos Estados Unidos e dos trabalhadores do campo. Também
+                    os imigrantes irlandeses contribuíram, com a introdução do banjo para sua formação, mas suas
+                    principais raízes são compostas pelas velhas canções inglesas. Por ser um gênero representado pelos
+                    homens do campo, o estilo da country music é associado a vestes e instrumentos artísticos como o
+                    Banjo, Mandolin, Fiddle (Rabeca), Violão e Washboard.<br>
+                    As primeiras gravações foram realizadas em 1922, pela gravadora Victor, colocando no mercado
+                    norte-americano o som de Unde Eck Robertson e Henry Gilliard. No entanto, Jimmie Rodgers, apesar de
+                    sua curta carreira é que ficou conhecido como o pai da country music, influenciando nomes como Hank
+                    Willians e Willie Nelson.<br>
+                    No Brasil, Bob Nelson foi o precursor do estilo country nos anos 60, embora o movimento country no
+                    Brasil surgiu no final da década de 70. No território brasileiro, a música country é a sertaneja, em
+                    que se destaca atualmente o sertanejo universitário. As duplas e cantores mais conhecidas são: Jorge
+                    e Matheus, Fernando e Sorocaba, Maria Cecília e Rodolfo, Luan Santana, Gusttavo Lima, João Carreiro
+                    e Capataz e muitos outros nomes.Com relação à moda country, a utilização de botas, camisas e chapéus
+                    foi estabelecida pelo fato de estas peças serem bastante utilizadas em cidades rurais, que remetem à
+                    origem do country nos Estados Unidos. Para compor ao visual sertanejo masculino você precisa apenas
+                    de uma calça jeans mais justa, botina e camisa. Alguns homens preferem caprichar na beca e adotam o
+                    bom e velho chapéu, fivela no cinto e uma barba para deixar a aparência adulta. Sem dúvidas as
+                    camisas xadrezes estão entre as principais peças da moda sertaneja. As camisas jeans, jaquetas de
+                    couro e camiseta gola polo também fazem parte do figurino country.No Brasil, este estilo foi
+                    rapidamente absorvido e transposto para as cidades grandes. A cultura country é, hoje, um elemento
+                    de integração entre o mundo rural e urbano. Desta forma, rodeios, casas de show, artistas da música
+                    sertaneja estão cada vez mais presentes para os habitantes das metrópoles e cidades que as
+                    circundam.<br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kkoT1nZOexY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="containerbutton" id="botaotext" style="display: none">
+                </div>
+                <div class="espaco"></div>
+                <center><button class="voltar" id="volt" onclick="Voltar()" style="display: none">VOLTAR</button>
+                </center>
+                <div class="espaco"></div>
+            </div>
+        </div>
+        </div>
+
+    </center>
+    <div class="espaco"></div>
+</body>
+
+</html>
+<script>
+    function mostrarBlues() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textBlues.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarClassico() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textClassico.style.display = "block";
+        volt.style.display = "block";
+
+    }
+    function mostrarJazz() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textJazz.style.display = "block";
+        volt.style.display = "block";
+
+    }
+    function mostrarSertanejo() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textSertanejo.style.display = "block";
+        volt.style.display = "block";
+
+    }
+    function mostrarRock() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textRock.style.display = "block";
+        volt.style.display = "block";
+    }
+
+    function mostrarRap() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textRap.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarFunk() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textFunk.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarEletronica() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textEletronica.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarSamba() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textSamba.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarPagode() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textPagode.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarPop() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textPop.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarReggae() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textReggae.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarMpb() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textMpb.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarForro() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textForro.style.display = "block";
+        volt.style.display = "block";
+    }
+    function mostrarCountry() {
+        cardblues.style.display = "none";
+        principal.style.display = "none";
+        cardclassica.style.display = "none";
+        cardfunk.style.display = "none";
+        cardpop.style.display = "none";
+        cardrock.style.display = "none";
+        cardsertanejo.style.display = "none";
+        cardsamba.style.display = "none";
+        cardreggae.style.display = "none";
+        cardpagode.style.display = "none";
+        cardjazz.style.display = "none";
+        cardeletronica.style.display = "none";
+        cardcountry.style.display = "none";
+        cardforro.style.display = "none";
+        cardrap.style.display = "none";
+        cardmpb.style.display = "none";
+        textCountry.style.display = "block";
+        volt.style.display = "block";
+    }
+
+    function Voltar() {
+        principal.style.display = "block";
+        cardblues.style.display = "inline-block";
+        cardclassica.style.display = "inline-block";
+        cardfunk.style.display = "inline-block";
+        cardpop.style.display = "inline-block";
+        cardrock.style.display = "inline-block";
+        cardsertanejo.style.display = "inline-block";
+        cardsamba.style.display = "inline-block";
+        cardreggae.style.display = "inline-block";
+        cardpagode.style.display = "inline-block";
+        cardjazz.style.display = "inline-block";
+        cardeletronica.style.display = "inline-block";
+        cardcountry.style.display = "inline-block";
+        cardforro.style.display = "inline-block";
+        cardrap.style.display = "inline-block";
+        cardmpb.style.display = "inline-block";
+        textClassico.style.display = "none";
+        textBlues.style.display = "none";
+        textJazz.style.display = "none";
+        textSertanejo.style.display = "none";
+        textRock.style.display = "none";
+        textRap.style.display = "none";
+        textFunk.style.display = "none";
+        textEletronica.style.display = "none";
+        textSamba.style.display = "none";
+        textPagode.style.display = "none";
+        textPop.style.display = "none";
+        textReggae.style.display = "none";
+        textMpb.style.display = "none";
+        textForro.style.display = "none";
+        textCountry.style.display = "none";
+        volt.style.display = "none";
+
+    }
+</script>

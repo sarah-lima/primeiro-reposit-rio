@@ -1,0 +1,231 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Garamond;
+    background-image: url('https://musicapave.com/wp-content/uploads/tumblr-de-musica.jpg');
+    background-size: cover;
+    display: block;    
+}
+.espaco_2{
+ background-color: #c0392b;
+ height: 5px;
+}
+nav> a:hover{
+    text-decoration: underline;
+  }
+  .navbar {
+    float: left;
+    width: 30px;
+    height: 50px;
+    position: fixed;
+    text-align: top;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+   /*Menu parte preta*/
+  
+  .nav {
+    color: #c0392b;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 220px;
+    transform: translateX(-221px);
+    z-index: 1;
+  }
+  .nav_none {
+    color: #c0392b;
+    background-color: rgb(8, 8, 8);
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 220px;
+    transform: translateX(-221px);
+    transition-property: translateX(-221px);
+    transition-duration: 1s;
+    z-index: 1;
+  }
+  .nav ul,
+  .nav_none ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .nav ul li,
+  .nav_none ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .nav ul li a,
+  .nav_none ul li a,
+  .nav button,
+  .nav_none button {
+    margin-bottom: 10px;
+    padding-left: 1px;
+    border-left: 3px solid #c0392b;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .5s, background-size 1s;
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .nav ul li a:before,
+  .nav_none ul li a:before
+  {
+    content: '';
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    transition: .5s;
+    background-color: #c0392b;
+    text-decoration: none;
+  }  
+  .navbar:hover ~ .nav {
+    transform: translateX(0px);
+    transition-property: translateX(-200);
+    transition-duration: 1s;
+  }
+  .nav:hover,
+  .nav_none:hover {
+    transform: translateX(0px);
+    transition-property: translateX();
+    transition-duration: 1s;
+  }
+  
+  .nav_none:hover .navbar {
+   display: none;
+  }
+  
+  
+  .logo_nav {
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  
+  .f_nav {
+    color: #c0392b;
+  }
+.menu h1{
+    float: left;
+    margin: 5px;
+    color: black;
+    font-size: 40px;
+    margin-top: 0
+}
+.art{
+    color: navy;
+}
+.art:hover{
+  color: darkblue;
+  font-size: 40px;
+  cursor: none;
+}
+.header{
+    background-size: auto;
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-colorido-da-musica_1416-354.jpg?size=338&ext=jpg');
+    width: 100%;
+    height: 70px;
+    border-bottom: #c0392b 5px solid;
+    position: fixed;
+    z-index: 20;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    background-attachment: fixed;
+  
+    /*
+    margin:top-bottom rigth-left
+    margin: 0 auto 0 auto;
+    margin: top right bottom left;
+*/
+}
+.header .container{
+    min-height: 70px;
+}
+.titulo{
+    float: left;
+    margin: auto;
+    padding: 10px;
+}
+.espaco{
+height: 90px;
+width: 100%;
+}
+.showcase{
+    width: 900px;
+    height: flex;
+    border-radius: 10px;
+    opacity: 0.9;
+    background: #ffff;
+    display: inline-block;
+}
+.textarte{
+    width: 750px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Garamond;
+}
+.sublinks{
+  display: none;
+}
+.nav button, .nav_none button{
+  background: none;
+  border: #c0392b;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Garamond
+}
+.cardtextarte{
+    color: white;
+    background-color: #000;
+    border-radius: 5px;
+    width: 170px;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 70px;
+   cursor: pointer;
+   display: inline-block;
+   margin-top: 10px
+  }
+  .voltar{
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    height: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top:10px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  div a{
+    text-decoration: none;
+    color: #4f56ab;
+    text-decoration-line: underline;
+    cursor: progress;
+  }
+  div ul li{
+    text-align: left;
+  }

@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Garamond;
+    background-image: url('https://1.bp.blogspot.com/-Tsdu56cfysQ/WZCF1Rmr0MI/AAAAAAAAF8w/j8unoS_im7wnMDY-KBHHcWGubi6_CwxAwCLcBGAs/s1600/DAN%25C3%2587A%2B-%2BDOUGLAS%2BARTES.jpg');
+    background-size: cover;
+    display: block;    
+}
+.art{
+    color: #c0392b;
+}
+.art:hover{
+  color: #c0392b;
+  font-size: 40px;
+  cursor: none;
+}
+.header{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFZXWUXl2giN3axwoMdB6P58Mo4UhAJCkzmj4dXUmBVv-eZlvM&usqp=CAU');
+}
+.showcase{
+    width: 900px;
+    height: flex;
+    border-radius: 10px;
+    opacity: 1;
+    background: #ffff;
+    display: inline-block;
+}
+.textarte{
+    width: 750px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Garamond;
+}
+.showcase img{
+  height: 150px;
+  border-radius: 3px;
+}
+.cardtextarte{
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+  width: flex;
+  height: flex;
+  font-size:15px;
+  text-align: top;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px
+}

@@ -1,0 +1,17 @@
+body{
+    background-image: url('streetdace.png');    
+    background-position: center;
+} 
+.aprender{
+    border: groove;
+    color: darkslategrey;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #ffeaa7;
+    opacity: 1;
+    font-weight: 900;
+}
+

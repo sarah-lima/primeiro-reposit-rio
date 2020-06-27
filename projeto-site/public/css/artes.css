@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Garamond;
+    background-color: rgb(223, 221, 221);
+    background-size: cover;
+    display: block;    
+}
+.art{
+    color: #c0392b;
+}
+.art:hover{
+  color: #c0392b;
+  font-size: 40px;
+  cursor: none;
+}
+.showcase{
+    width: 900px;
+    height: flex;
+    border-radius: 10px;
+    opacity: 0.9;
+    background: #ffff;
+    display: inline-block;
+}
+.textarte{
+    width: 750px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Garamond;
+}
+.showcase img{
+  height: 250px;
+  border-radius: 3px;
+}
+.showcase div{
+  display: inline-block;
+}
+.showcase a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black
+}

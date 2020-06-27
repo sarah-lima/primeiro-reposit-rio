@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/index.js"></script>
+    <title>Cadastro-ARTES Coisas escondidas</title>
+    <script type="text/javascript">
+        function validar(){
+            var nome = form_cadastro.nome.value;
+            var email = form_cadastro.login.value;
+            var senha = form_cadastro.senha.value;
+            mensagemErro.innerHTML="";
+            if(nome == "" || nome.length<3){
+               mensagemErro.innerHTML+='Preencha o campo nome<br>';
+               
+              
+            }
+            
+            if(email == "" || email.indexOf('@') == -1 ){
+                mensagemErro.innerHTML+='Preencha o campo E-mail<br>';
+            
+              
+            }
+            
+            if(senha == "" || senha.length <= 5){
+                mensagemErro.innerHTML+='Preencha o campo senha com minimo 6 caracteres<br>';
+              
+              
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="minhaDiv" style="height:661px; width:100%">
+        <div class="header">
+            <div class="container">
+                <i>
+                    <h1 class="titulo"><span class="art">ARTES</span> Coisas escondidas</h1>
+                </i>
+
+                <div class="nav_1">
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="espaco"></div>
+            <center>
+                <div class="showcase">
+                    <img src="https://lh3.googleusercontent.com/proxy/0gLfXDRNLFE3wBFpTqefaOPEaqj20FJcJnWzhO0uMz49mWCzcithu7b6azd4RBIqJjgeoNSG_MxNVJp3m0FqueCvF-88-Q"
+                        alt="">
+                    <div class="espaco"></div>
+                    <h1>CADASTRO</h1><br>
+                    <form name="formuser" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        Nome: <input  type="text" placeholder="Insira seu nome" name="nome" required>
+                        <br><br>
+                        Usuário: <input  placeholder="insira o email" type="email" name="login" required>
+                        <br><br>
+                        Senha: <input  type="password" placeholder="insira uma senha" name="senha" required minlength="6">
+                       <br><br><br>
+                        <button id="btn_entrar" onclick="return validar()">Cadastrar</button><br>
+                         <span id="mensagemErro"></span>
+             
+                        <div class="espaco"></div>
+                    </form>
+                </div>
+                <img src="aguarde2.gif" id="img_aguarde" style="display: none;" width="100px">
+
+                <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function cadastrar() {
+        aguardar();        
+        var formulario = new URLSearchParams(new FormData(form_cadastro));   
+        fetch("/usuarios/cadastrar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+
+                if (response.ok) { 
+                    
+                    window.location.href = 'login.html';
+                } else {
+          
+                    mensagemErro.innerHTML += 'Erro de cadastro!';
+                    response.text().then(function (resposta) {
+                        div_erro.innerHTML = resposta;
+                    });
+                    finalizar_aguardar();
+                }
+            });
+
+            return false;
+        
+    }
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
+    }
+
+</script>

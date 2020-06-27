@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Garamond;
+    background-image: url("../css/Design\ sem\ nome.jpg");
+    background-size: 100%;
+  
+}
+
+.showcase{
+    width: 600px;
+    border-radius: 10px;
+    opacity: 0.9;
+    background: rgb(34, 34, 34);
+    color: aliceblue
+}
+.header .container{
+    min-height: 70px;
+}
+.showcase input{
+    width: 200px;
+}
+.showcase button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
+    border-radius: 20%;
+}
+.showcase button h4{
+    margin: 0px;
+}
+.nav_1{
+    float: right;
+}
+.nav_1 ul li a{
+text-decoration: none;
+color: white;
+font-size: 15px;
+}
+.nav_1 ul li a:hover{
+    text-decoration: initial;
+    font-size: 20px;
+}
+.nav_1 ul li{
+    display: inline-block;
+}
+.nav_1 ul{
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.art{
+    color: white;
+}
+.art:hover{
+  font-size: 40px;
+  cursor: none;
+}
+.header{
+    background-color:  #170d30;
+    width: 100%;
+    height: 70px;
+    border-bottom: white 5px solid;
+}
+
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    background-attachment: fixed;
+    /*
+    margin:top-bottom rigth-left
+    margin: 0 auto 0 auto;
+    margin: top right bottom left;
+*/
+}
+.titulo{
+    float: left;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-family: 'Garamond';
+}
+.espaco{
+    height: 90px;
+    width: 100%;
+    }
+.cadastrar, a{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    color: white;
+    
+}
+form input{
+    border-radius: 20px;
+}
+img{
+    width: 100px;
+    float: center;
+    z-index: 10;
+}

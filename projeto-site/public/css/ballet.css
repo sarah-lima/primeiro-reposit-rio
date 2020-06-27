@@ -1,0 +1,16 @@
+body{
+background-image: url('https://i.pinimg.com/originals/94/c3/ab/94c3ab23cd5ffece1582da53713ec4db.jpg');
+background-repeat: repeat
+}
+.aprender{
+    border: groove;
+    color: darkslategrey;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: gainsboro;
+    opacity: 1;
+    font-weight: 900;
+}

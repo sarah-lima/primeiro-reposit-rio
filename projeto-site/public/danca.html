@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dança</title>
+    <link rel="stylesheet" href="css/dancas.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="shortout icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div onmouseover="mudaNomeNav()" id="barra_nav" class="navbar">
+            <div class="menu">
+                <h1>☰</h1>
+            </div>
+        </div>
+        <div onmouseout="some()" id="navegação" class="nav">
+            <i class="logo_nav"><span class="f_nav">ARTES</span>Coisas escondidas</i>
+            <div class="espaco_2"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a><button onclick="sublink()">Curiosidades▿</button></a>
+                    <ul class="sublinks" id="sub">
+                        <li><a href="artesvisuais.html">Artes Visuais</a></li>
+                        <li><a href="danca.html">Dança</a></li>
+                        <li><a href="escultura.html">Escultura</a></li>
+                        <li><a href="literatura.html">Literatura</a></li>
+                        <li><a href="musica.html">Música</a></li>
+                    </ul>
+                </li>
+                <li><a href="informações.html">Informações</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1 class="titulo"><i><span class="art">ARTES</span> Coisas escondidas</i></h1>
+        </div>
+    </div>
+    <div class="espaco"></div>
+    <center>
+        <br>
+        <div class="showcase">
+
+            <div class="textarte"><br>
+                DANÇA<br>
+                A dança é utilizada como uma forma de expressar sentimentos, acontecimentos na vida de quem a
+                produz, ela é uma história contada sem palavras. Os sentimentos têm uma conexão muito forte com
+                o psicológico, quando sentimos emoções ele reage de formas diferentes com cada um, e quem
+                reproduz ou assiste a danças diversas usam isto como um escape, uma forma de extravasar as
+                emoções.<br>
+                <a href="dança/street.html" class="cardtextarte">
+                    STREET DANCE<br>
+                    <img src="https://contents.mediadecathlon.com/p1569238/640x0/2453pt1636/4906xcr3271/danse-urbaine.jpg?k=4b453fbd3f2e87550d4fc898c10aae25"
+                        alt=""></a>
+                
+                <a href="dança/ballet.html" class="cardtextarte">
+                    BALLET<br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGyVxKl3urGDpD684BXRhroGxpKkE4TWcBqOreujEJMQBQTsIq&usqp=CAU"
+                        alt=""></a>
+                
+                <a href="dança/salao.html" class="cardtextarte">DANÇA DE SALÃO<br>
+                    <img src="https://abds.com.br/wp-content/uploads/2018/01/bolero.jpg" alt="">
+                </a>
+                
+                <a href="dança/contemporanea.html" class="cardtextarte">
+                    DANÇA CONTEMPORÂNEA<br>
+                    <img src="data:image/jpeg;base64,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"
+                        alt=""></a>
+                
+                <a href="dança/jazz.html" class="cardtextarte">
+                    JAZZ<br>
+                    <img src="https://fortissima.com.br/wp-content/uploads/2015/05/aula-de-jazz-tt-width-640-height-420-bgcolor-FFFFFF.jpg"
+                        alt="">
+                </a>
+                
+                <a href="dança/country.html" class="cardtextarte">
+                    COUNTRY<br>
+                    <img src="https://i.pinimg.com/564x/7f/99/3b/7f993ba05270542b9f52ad68ac29dc8e.jpg" alt="">
+                </a>
+                <div class="espaco"></div>
+            </div>
+        </div>
+    </center>
+    <div class="espaco"></div>
+
+</body>
+</html>

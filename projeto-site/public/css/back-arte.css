@@ -1,0 +1,16 @@
+body{
+    background-image: url('https://i0.wp.com/www.abanbrasil.org.br/wp-content/uploads/2016/03/Artes.jpg?fit=600%2C430')
+}
+.cardtextarte{
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 70px;
+   cursor: pointer;
+   display: inline-block;
+   margin-top: 10px
+  }

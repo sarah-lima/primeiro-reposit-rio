@@ -1,0 +1,20 @@
+body{
+    background-image: url('https://blogpilates.com.br/wp-content/uploads/2018/03/Dan%C3%A7a-de-Sal%C3%A3o-CAPA.png');
+    background-size: auto
+}
+.estilos{
+    align-items: center 
+}
+.aprender{
+    border: groove;
+    color: darkslategrey;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: gainsboro;
+    opacity: 1;
+    font-weight: 900;
+}
+

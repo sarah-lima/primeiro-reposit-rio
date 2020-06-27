@@ -1,0 +1,52 @@
+body{
+    background-image: url('https://www.sescsp.org.br/files/artigo/fb75dfef/e82b/4d03/b42b/8851a0aced6d.jpg');
+    background-size: auto;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Garamond;
+    display: block;  
+}
+.aprender{
+    border: groove;
+    color: darkslategrey;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: tan;
+    font-weight: 900;
+}
+.art{
+    color: #c0392b;
+}
+.art:hover{
+  color: #c0392b;
+  font-size: 40px;
+  cursor: none;
+}
+.header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    border-bottom: #c0392b 5px solid;
+    position: fixed;
+    z-index: 20;
+    color: white;
+}
+.showcase{
+    width: 900px;
+    height: flex;
+    border-radius: 10px;
+    opacity: 1;
+    background: #ffff;
+    display: inline-block;
+}
+.textarte{
+    width: 750px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Garamond;
+}
